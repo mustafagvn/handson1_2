@@ -12,6 +12,6 @@ public class HomeController {
         int a = 5;
         int b = 3;
 
-        return Collections.singletonMap("Sum", a+b);
+        return Collections.singletonMap("Sum of Integers", a+b);
     }
 }
