@@ -10,8 +10,13 @@ public class HomeController {
     @Get
     public Map<String, Object> index() {
         int a = 5;
-        int b = 3;
+        int b = 6;
 
-        return Collections.singletonMap("Sum", a+b);
+        return Collections.singletonMap("Sum", getSum(a, b));
+    }
+
+    public int getSum(int a, int b)
+    {
+        return a + b;
     }
 }
