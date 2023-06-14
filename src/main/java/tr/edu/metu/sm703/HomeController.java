@@ -9,7 +9,9 @@ public class HomeController {
 
     @Get
     public Map<String, Object> index() {
-        return Collections.singletonMap("message", "Hello World");
-    // comment
+        int a = 5;
+        int b = 3;
+
+        return Collections.singletonMap("Sum:", a+b);
     }
 }
