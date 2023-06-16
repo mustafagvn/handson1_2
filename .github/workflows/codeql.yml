@@ -7,7 +7,7 @@ on:
     # The branches below must be a subset of the branches above
     branches: [ master, develop, qa ]
   schedule:
-    - cron: '6 10 * * 0'
+    - cron: '0 10 * * 6'
 
 permissions:
   contents: read
