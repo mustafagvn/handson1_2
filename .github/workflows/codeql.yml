@@ -43,6 +43,8 @@ jobs:
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
+        with:
+          sarif_name: ./.github/workflows/codeql-results.sarif
 
       - name: Fail if alert
         run: exit $(cat ./.github/codeql/codeql-sarif.json | jq '.runs[0].results | length')
