@@ -12,7 +12,7 @@ public class HomeController {
         int a = 5;
         int b = 6;
 
-        return Collections.singletonMap("Sum", getSum(a, b));
+        return Collections.singletonMap("Sum qa", getSum(a, b));
     }
 
     public int getSum(int a, int b)
